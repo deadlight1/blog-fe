@@ -1,6 +1,13 @@
-# BlogFe
+# Front-end part of simple crud (without security)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+
+## Back-end part
+https://github.com/deadlight1/blog-be
+
+## How to run?
+1. clone and run back-end part
+2. clone and run front-end part
 
 ## Development server
 
