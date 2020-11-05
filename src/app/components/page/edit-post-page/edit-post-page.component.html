@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>New post</h1>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <label>
+      <div
+        *ngIf="form.get('title').touched && form.get('title').invalid"
+        class="validation">
+        <small *ngIf="form.get('title').errors.required" class="warning">
+          Field title must not be empty
+        </small>
+      </div>
+      <input class="form-control" type="text" formControlName="title" placeholder="Title">
+    </label>
+
+    <div class="form-control">
+      <quill-editor formControlName="content"></quill-editor>
+    </div>
+    <label>
+      <div
+        *ngIf="form.get('author').touched && form.get('author').invalid"
+        class="validation"
+      >
+        <small *ngIf="form.get('author').errors.required" class="warning">
+          Field author must not be empty
+        </small>
+      </div>
+      <input class="form-control" type="text" formControlName="author" placeholder="Author">
+    </label>
+    <button class="btn btn-block btn-dark" [disabled]="form.invalid" type="submit">Edit</button>
+  </form>
+</div>

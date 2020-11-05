@@ -1,0 +1,11 @@
+<div class="card" [routerLink]="'/post'" [queryParams]="{id: post.id}">
+  <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>{{post.title}}</b></h4>
+    <p>{{post.author}}</p>
+  </div>
+  <div class="container">
+    <button class="btn btn-dark" [routerLink]="'/post'" [queryParams]="{id: post.id}">Open</button>
+    <button class="btn btn-dark" [routerLink]="'/post/edit'" [queryParams]="{id: post.id}">Edit</button>
+  </div>
+</div>

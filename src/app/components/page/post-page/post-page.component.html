@@ -1,0 +1,14 @@
+<div class="container" *ngIf="post$ | async as post; else loading">
+  <h1 class="text-center">{{post.title}}</h1>
+  <div class="container">
+    <quill-view-html [content]="post.content"></quill-view-html>
+  </div>
+  <p class="right">{{post.author}}</p>
+  <button class="btn btn-dark" [routerLink]="'edit'" [queryParams]="{id: post.id}">Edit</button>
+  <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+  <button class="btn btn-dark" [routerLink]="'/'">Back</button>
+</div>
+
+<ng-template #loading>
+  <div class="container">Loading...</div>
+</ng-template>
