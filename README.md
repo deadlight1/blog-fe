@@ -1,6 +1,7 @@
 # Front-end part of simple crud (without security)
 ##Demo
-https://youtu.be/a1zZHpECNOQ
+[![Watch the video](https://img.youtube.com/vi/a1zZHpECNOQ/maxresdefault.jpg)](https://youtu.be/a1zZHpECNOQ)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
